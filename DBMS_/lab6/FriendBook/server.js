@@ -12,7 +12,7 @@ app.use(express.static(__dirname)); // To serve index.html directly
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "cg06gh6385", // Add your MySQL password
+    password: "", // Add your MySQL password
     database: "frienddb"
 });
 
@@ -55,3 +55,4 @@ app.get("/delete/:id", (req, res) => {
 
 // Start Server
 app.listen(3000, () => console.log("🚀 Server running on http://localhost:3000"));
+
